@@ -1,3 +1,5 @@
-# Weather APP, consuming a weather API
+# Weather APP
+
+Consuming a openWeather API
 
 [💻 DEPLOY ◀ ](https://weatherapp-livid-five.vercel.app/)
