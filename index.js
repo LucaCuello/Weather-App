@@ -154,6 +154,12 @@ const renderHTML = (cityInfo) => {
       </span>
   </div>
 </div>
+<span class="github">
+  <a href="https://github.com/lukeraig" target="_blank">
+    <i class="fa-brands fa-github"></i> 
+    Github
+  </a>
+</span>
   `;
   setTimeout(opacityAnimation, 900);
 };
