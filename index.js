@@ -4,8 +4,7 @@ const searchInput = document.getElementById("search--input"),
   cloud = document.getElementById("cloud"),
   weatherSection = document.getElementById("weather--info"),
   apiKey = "e42b1761cc8e126c964f37d3c0677923",
-  animationContainer = document.getElementById("animation--container"),
-  error = document.getElementById("error");
+  animationContainer = document.getElementById("animation--container");
 
 const rainAnimation = `
   <div class="animated--cloud"></div>
@@ -112,7 +111,6 @@ const sectionAnimation = () => {
 };
 
 const roundTemp = (temp) => {
-  console.log(temp);
   if (temp > 1) {
     return Math.round(temp);
   } else if (temp < 1) {
@@ -123,7 +121,6 @@ const roundTemp = (temp) => {
 const renderHTML = (cityInfo) => {
   sectionAnimation();
   const { country } = cityInfo.sys;
-  console.log(cityInfo);
   const { description, main } = cityInfo.weather[0];
   const { name } = cityInfo;
   const { temp, temp_max, temp_min, humidity } = cityInfo.main;
@@ -171,7 +168,7 @@ const renderHTML = (cityInfo) => {
   </a>
 </span>
   `;
-  setTimeout(opacityAnimation, 900);
+  setTimeout(opacityAnimation, 600);
 };
 
 const showError = (message) => {
