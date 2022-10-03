@@ -50,6 +50,13 @@ const snowAnimation = `
   <span style="--i:11"></span>
 </div> 
 `;
+
+const mistAnimation = `
+<div class="animated--cloud cloudy cloud--1 mist"></div>
+<div class="animated--cloud cloudy cloud--2 mist"></div>
+<div class="animated--cloud cloudy cloud--3 mist"></div>
+`;
+
 const cloudAnimation = () => {
   searchInput.addEventListener("focus", () => {
     cloud.style.transform = "scale(1.07)";
@@ -68,6 +75,8 @@ const changeWeatherAnimation = (info) => {
     return rainAnimation;
   } else if (info === "Snow") {
     return snowAnimation;
+  } else if (info === "Mist") {
+    return mistAnimation;
   }
 };
 
@@ -92,7 +101,6 @@ const fetchWeather = async (city) => {
   }
 };
 
-// TODO: Hacer animación de "Mist"
 const getCity = () => {
   const city = searchInput.value.trim();
   fetchWeather(city);
@@ -102,6 +110,7 @@ const getCity = () => {
 const sectionAnimation = () => {
   weatherSection.style.opacity = "1";
 };
+
 const roundTemp = (temp) => {
   console.log(temp);
   if (temp > 1) {
@@ -110,6 +119,7 @@ const roundTemp = (temp) => {
     return temp;
   }
 };
+
 const renderHTML = (cityInfo) => {
   sectionAnimation();
   const { country } = cityInfo.sys;

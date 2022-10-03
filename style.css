@@ -135,11 +135,11 @@ form
 }
 .github 
 {
-    position: absolute;
+    position: relative;
     font-weight: 700;
     font-size: 14px;
     color: #2b6d6a;
-    bottom: 5px;
+    bottom: -30px;
 }
 a
 {
@@ -199,7 +199,6 @@ h3
     position: relative;
     height: 80px;
     width: 80px;
-    /* border: 1px solid black; */
 }
 .animated--cloud 
 {
@@ -254,6 +253,7 @@ h3
 }
 
 /* * SUNNY ANIMATION */
+
 .sun 
 {
     position: absolute;
@@ -300,7 +300,8 @@ h3
     z-index: 3;
 }
 
-/* * SNOWING ANIMATION */
+/* * SNOW ANIMATION */
+
 .animated-snow 
 {
     position: relative;
@@ -329,6 +330,19 @@ h3
 .cloud--snow::after
 {
     background-color: #d5d1df;
+}
+
+/* * MIST ANIMATION */
+
+.mist,
+.mist::after,
+.mist::before
+{
+    background-color: #cecece;
+}
+.mist
+{
+    box-shadow: 2px 2px 30px rgb(87, 81, 95);
 }
 /* Animations */
 /* rain animation */
