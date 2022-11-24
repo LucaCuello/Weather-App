@@ -1,7 +1,9 @@
-# Weather APP
+# Weather App
 
-Consuming a openWeather API
+## About
 
-<img src="https://i.ibb.co/kSSSt2Y/Screenshot-1.png">
+A responsive web consuming a weather API.
 
-[💻 DEPLOY ◀ ](https://weatherapp-livid-five.vercel.app/)
+[🔹Deploy](https://weatherapp-livid-five.vercel.app/).
+
+<img src="https://iili.io/H3RAOFI.png" alt="preview" border="0">
